@@ -92,21 +92,23 @@ function App() {
                 {isLoading ? (
                   <span className="loading loading-spinner loading-xs ml-2"></span>
                 ) : (
-                  albums?.map((album) => (
-                    <li key={album.albumId}>
-                      <span
-                        className={
-                          activeItem.type === "album" &&
-                          activeItem.albumId === album.albumId
-                            ? "text-primary"
-                            : ""
-                        }
-                        onClick={() => handleAlbumClick(album.albumId)}
-                      >
-                        {album.albumId}
-                      </span>
-                    </li>
-                  ))
+                  albums
+                    ?.sort((a, b) => b.albumId - a.albumId)
+                    .map((album) => (
+                      <li key={album.albumId}>
+                        <span
+                          className={
+                            activeItem.type === "album" &&
+                            activeItem.albumId === album.albumId
+                              ? "text-primary"
+                              : ""
+                          }
+                          onClick={() => handleAlbumClick(album.albumId)}
+                        >
+                          {album.albumId}
+                        </span>
+                      </li>
+                    ))
                 )}
               </ul>
             </li>
