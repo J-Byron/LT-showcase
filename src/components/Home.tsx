@@ -27,7 +27,7 @@ const Home = () => {
         </div>
 
         <h2 className="text-2xl font-semibold text-primary mb-4">
-          How to test the project:
+          How to test the project
         </h2>
         <div className="mockup-code">
           <pre data-prefix="$">
