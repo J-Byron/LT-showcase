@@ -1,4 +1,4 @@
-# Photo Album Technical Showcase
+# Lean Techniques technical showcase
 
 A React-based photo album application built with React, TypeScript, Vite, and TanStack Query.
 
