@@ -2,6 +2,8 @@
 
 A React-based photo album application built with React, TypeScript, Vite, and TanStack Query.
 
+View the live deploy [here](https://lt-showcase.vercel.app/)
+
 ## Features
 
 - View all photos or filter by album
