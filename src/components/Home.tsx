@@ -13,13 +13,26 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="bg-base-100 p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-primary mb-4">About Me</h2>
-          <p className="text-base-content/80 leading-relaxed">
-            I'm a software developer with a love for creating elegant solutions
-            to complex problems. When I'm not coding, you can find me [your
-            interests/hobbies].
-          </p>
+        <h2 className="text-2xl font-semibold text-primary mb-4">
+          How to run the project
+        </h2>
+        <p className="text-base-content/80 leading-relaxed mb-4">
+          Once you have the project cloned on your machine, you can run the
+          project locally by running the following command in your terminal:
+        </p>
+        <div className="mockup-code mb-12">
+          <pre data-prefix="$">
+            <code>npm i && npm run dev</code>
+          </pre>
+        </div>
+
+        <h2 className="text-2xl font-semibold text-primary mb-4">
+          How to test the project:
+        </h2>
+        <div className="mockup-code">
+          <pre data-prefix="$">
+            <code>npm run test</code>
+          </pre>
         </div>
       </div>
     </main>
